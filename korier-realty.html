@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Korier Realty — Luxury Living in Accra</title>
+<meta name="description" content="Soaring Court by Korier Realty — luxury apartments, studios, lofts and townhouses from $60,000 in Adenta, Accra. Fully fitted kitchens, pool, gym, 24hr security. Flexible payment plans available." />
+<meta name="keywords" content="Korier Realty, Soaring Court, luxury apartments Accra, townhouses Ghana, Adenta apartments, studio apartments Accra, real estate Ghana, property investment Accra" />
+<meta property="og:title" content="Soaring Court by Korier Realty — Luxury Living in Accra from $60,000" />
+<meta property="og:description" content="Studios, apartments and townhouses in Adenta, Accra. Fully fitted, modern finishes, flexible payment plans. Reserve with $3,500." />
+<meta property="og:image" content="images/front-view-3.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_GH" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Korier Realty — Luxury Living in Accra" />
+<meta name="twitter:description" content="Studios, apartments &amp; townhouses from $60,000 in Adenta, Accra. Flexible payment plans." />
+<meta name="twitter:image" content="images/front-view-3.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --wine: #6B1F2A;
+    --wine-dark: #4A1219;
+    --wine-mid: #7D2533;
+    --wine-light: #8B3040;
+    --gold: #C9A84C;
+    --gold-light: #E2C97A;
+    --gold-pale: #F5EDD3;
+    --gold-dark: #9E7F2E;
+    --white: #FFFFFF;
+    --off-white: #FAF8F4;
+    --cream: #F5F0E8;
+    --text-dark: #1A0A0E;
+    --text-mid: #4A2030;
+    --text-muted: #7A6070;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--off-white); color: var(--text-dark); overflow-x: hidden; }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    padding: 30px 70px;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: all 0.5s ease;
+  }
+  nav.scrolled {
+    background: rgba(74,18,25,0.97);
+    backdrop-filter: blur(24px);
+    padding: 18px 70px;
+    box-shadow: 0 2px 40px rgba(0,0,0,0.35);
+  }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { height: 40px; width: auto; transition: height 0.5s ease; }
+  nav.scrolled .nav-logo img { height: 32px; }
+  .nav-links { display: flex; gap: 44px; list-style: none; align-items: center; }
+  .nav-links a { font-size: 10px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.3s; }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-cta { border: 1px solid var(--gold) !important; color: var(--gold) !important; padding: 10px 28px !important; transition: all 0.3s !important; }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--wine-dark) !important; }
+
+  .hero { height: 100vh; min-height: 760px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center; padding: 0 70px 100px 90px; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('images/front-view-3.jpg'); background-size: cover; background-position: center 30%; transform: scale(1.04); animation: subtleZoom 12s ease-out forwards; }
+  @keyframes subtleZoom { from { transform: scale(1.04); } to { transform: scale(1); } }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(115deg, rgba(74,18,25,0.93) 0%, rgba(74,18,25,0.78) 45%, rgba(20,5,8,0.65) 100%); }
+  .hero-overlay-2 { position: absolute; inset: 0; background: radial-gradient(ellipse at 75% 40%, rgba(201,168,76,0.07) 0%, transparent 55%); }
+  .hero-content { position: relative; z-index: 2; max-width: 640px; }
+  .hero-eyebrow { font-size: 9px; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; display: flex; align-items: center; gap: 18px; opacity: 0; animation: fadeUp 0.8s 0.3s forwards; }
+  .hero-eyebrow::before { content: ''; display: block; width: 44px; height: 1px; background: var(--gold); }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(54px, 7.5vw, 96px); font-weight: 300; line-height: 1.0; color: var(--white); margin-bottom: 30px; opacity: 0; animation: fadeUp 1s 0.5s forwards; }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub { font-size: 13px; font-weight: 300; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); line-height: 1.9; max-width: 420px; margin-bottom: 52px; opacity: 0; animation: fadeUp 1s 0.7s forwards; }
+  .hero-ctas { display: flex; gap: 18px; opacity: 0; animation: fadeUp 1s 0.9s forwards; }
+  .btn-gold { background: var(--gold); color: var(--wine-dark); padding: 17px 44px; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; transition: all 0.35s; display: inline-block; }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 36px rgba(201,168,76,0.25); }
+  .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.35); color: var(--white); padding: 17px 44px; font-size: 10px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; transition: all 0.35s; display: inline-block; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+  .hero-frame { position: absolute; z-index: 2; right: 7%; top: 50%; transform: translateY(-50%); width: 370px; height: 480px; opacity: 0; animation: fadeIn 1.2s 1.1s forwards; }
+  .hero-frame-border { position: absolute; inset: 0; border: 1px solid rgba(201,168,76,0.25); }
+  .hero-frame-border::before { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(201,168,76,0.12); }
+  .hero-frame img { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; }
+
+  .hero-stats { position: absolute; z-index: 2; bottom: 0; left: 0; right: 0; display: flex; border-top: 1px solid rgba(201,168,76,0.18); padding: 36px 90px; opacity: 0; animation: fadeUp 0.9s 1.2s forwards; }
+  .hero-stat { flex: 1; padding: 0 40px; border-right: 1px solid rgba(201,168,76,0.12); }
+  .hero-stat:first-child { padding-left: 0; }
+  .hero-stat:last-child { border-right: none; }
+  .h-stat-n { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 300; color: var(--gold-light); line-height: 1; margin-bottom: 7px; }
+  .h-stat-l { font-size: 9px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.38); }
+
+  .marquee-strip { background: var(--wine-dark); padding: 15px 0; overflow: hidden; border-top: 1px solid rgba(201,168,76,0.25); border-bottom: 1px solid rgba(201,168,76,0.25); }
+  .marquee-inner { display: flex; gap: 56px; animation: marquee 32s linear infinite; white-space: nowrap; }
+  .marquee-item { font-size: 9px; font-weight: 600; letter-spacing: 3.5px; text-transform: uppercase; color: rgba(201,168,76,0.65); display: flex; align-items: center; gap: 22px; flex-shrink: 0; }
+  .m-diamond { width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
+
+  section { padding: 130px 90px; }
+  .eyebrow { font-size: 9px; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 18px; display: flex; align-items: center; gap: 18px; }
+  .eyebrow::before { content: ''; display: block; width: 38px; height: 1px; background: var(--gold); }
+  .eyebrow.light { color: var(--gold); }
+  .eyebrow.light::before { background: var(--gold); }
+  .sec-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 66px); font-weight: 400; line-height: 1.08; color: var(--wine-dark); margin-bottom: 18px; }
+  .sec-title em { font-style: italic; color: var(--wine-mid); }
+  .sec-title.light { color: var(--white); }
+  .sec-title.light em { color: var(--gold-light); }
+  .sec-sub { font-size: 13px; font-weight: 300; color: var(--text-muted); line-height: 1.95; max-width: 480px; }
+  .sec-sub.light { color: rgba(255,255,255,0.45); }
+
+  .about { background: var(--white); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 110px; align-items: center; margin-top: 90px; }
+  .about-imgs { position: relative; }
+  .about-img-main { width: 100%; height: 580px; object-fit: cover; display: block; }
+  .about-img-over { position: absolute; bottom: -44px; right: -44px; width: 230px; height: 290px; object-fit: cover; border: 8px solid var(--white); box-shadow: 0 24px 64px rgba(107,31,42,0.18); }
+  .about-badge { position: absolute; top: 44px; left: -44px; width: 126px; height: 126px; border-radius: 50%; background: var(--wine); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-shadow: 0 12px 44px rgba(107,31,42,0.32); }
+  .ab-num { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 300; color: var(--gold-light); line-height: 1; }
+  .ab-lbl { font-size: 8px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 5px; }
+  .about-body { padding-right: 10px; }
+  .about-body p { font-size: 14px; font-weight: 300; color: var(--text-muted); line-height: 2.05; margin-bottom: 22px; }
+  .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 44px; }
+  .pillar { padding: 26px; border-left: 3px solid var(--gold); background: var(--cream); }
+  .pillar-name { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 500; color: var(--wine); margin-bottom: 8px; }
+  .pillar-desc { font-size: 11px; font-weight: 300; color: var(--text-muted); line-height: 1.75; }
+
+  .properties { background: var(--cream); }
+  .prop-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 72px; }
+  .prop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+  .prop-card { background: var(--white); overflow: hidden; position: relative; cursor: pointer; transition: transform 0.45s ease; }
+  .prop-card:hover { transform: translateY(-10px); z-index: 2; }
+  .prop-card.featured { grid-column: span 2; }
+  .prop-img-wrap { overflow: hidden; position: relative; }
+  .prop-img { width: 100%; object-fit: cover; display: block; transition: transform 0.65s ease; height: 360px; }
+  .prop-card.featured .prop-img { height: 450px; }
+  .prop-card:hover .prop-img { transform: scale(1.05); }
+  .prop-tag { position: absolute; top: 24px; left: 24px; background: var(--wine); color: var(--gold-light); font-size: 8px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; padding: 7px 16px; }
+  .prop-body { padding: 30px 30px 34px; border-bottom: 3px solid transparent; transition: border-color 0.3s; }
+  .prop-card:hover .prop-body { border-color: var(--gold); }
+  .prop-loc { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .loc-dot { width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); }
+  .prop-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--wine-dark); margin-bottom: 18px; line-height: 1.2; }
+  .prop-feats { display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 22px; }
+  .feat { font-size: 10px; font-weight: 500; color: var(--text-muted); letter-spacing: 0.5px; display: flex; align-items: center; gap: 7px; }
+  .feat-line { width: 1px; height: 12px; background: var(--gold); opacity: 0.5; }
+  .prop-foot { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; border-top: 1px solid rgba(201,168,76,0.2); }
+  .prop-price { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; color: var(--wine); }
+  .prop-price small { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 300; color: var(--text-muted); margin-left: 4px; }
+  .prop-arrow { width: 46px; height: 46px; background: var(--wine); color: var(--gold); border: none; cursor: pointer; font-size: 18px; font-weight: 300; display: flex; align-items: center; justify-content: center; transition: all 0.3s; font-family: 'Cormorant Garamond', serif; }
+  .prop-arrow:hover { background: var(--gold); color: var(--wine-dark); }
+
+  .gallery { background: var(--white); padding: 130px 90px; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 260px; gap: 3px; margin-top: 72px; }
+  .gal-item { overflow: hidden; position: relative; cursor: pointer; }
+  .gal-item.tall { grid-row: span 2; }
+  .gal-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.65s ease; }
+  .gal-item:hover img { transform: scale(1.06); }
+  .gal-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(74,18,25,0.5) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px; }
+  .gal-item:hover .gal-overlay { opacity: 1; }
+  .gal-label { font-size: 11px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); }
+
+  .amenities { background: var(--wine-dark); position: relative; overflow: hidden; }
+  .amenities::after { content: ''; position: absolute; top: -120px; right: -120px; width: 550px; height: 550px; border-radius: 50%; background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 65%); pointer-events: none; }
+  .amen-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 72px; }
+  .amen-card { padding: 50px 36px; text-align: center; background: rgba(255,255,255,0.025); border: 1px solid rgba(201,168,76,0.07); transition: all 0.4s; }
+  .amen-card:hover { background: rgba(201,168,76,0.055); border-color: rgba(201,168,76,0.22); transform: translateY(-5px); }
+  .amen-icon { width: 52px; height: 52px; border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 26px; transition: border-color 0.3s; }
+  .amen-card:hover .amen-icon { border-color: rgba(201,168,76,0.7); }
+  .amen-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--gold); stroke-width: 1.3; }
+  .amen-name { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 400; color: var(--white); margin-bottom: 12px; }
+  .amen-desc { font-size: 11px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.8; }
+
+  .loc-band { background: var(--gold); padding: 64px 90px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+  .loc-band-title { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--wine-dark); max-width: 560px; line-height: 1.3; }
+  .loc-band-title strong { font-weight: 600; }
+  .loc-pills { display: flex; flex-wrap: wrap; gap: 12px; }
+  .loc-pill { padding: 9px 22px; border: 1px solid rgba(74,18,25,0.25); font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--wine-dark); background: rgba(255,255,255,0.28); }
+
+  .process { background: var(--off-white); }
+  .process-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 88px; position: relative; }
+  .process-row::before { content: ''; position: absolute; top: 52px; left: 12.5%; right: 12.5%; height: 1px; background: linear-gradient(to right, transparent, var(--gold), var(--gold), transparent); opacity: 0.6; }
+  .proc-step { text-align: center; padding: 0 32px; position: relative; z-index: 1; }
+  .proc-circle { width: 104px; height: 104px; border-radius: 50%; background: var(--white); border: 1.5px solid var(--gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 34px; transition: all 0.35s; }
+  .proc-step:hover .proc-circle { background: var(--wine); border-color: var(--wine); }
+  .proc-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--wine); transition: color 0.35s; }
+  .proc-step:hover .proc-num { color: var(--gold-light); }
+  .proc-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: var(--wine-dark); margin-bottom: 14px; }
+  .proc-desc { font-size: 11px; font-weight: 300; color: var(--text-muted); line-height: 1.85; }
+
+  .testimonials { background: var(--white); }
+  .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 72px; }
+  .test-card { padding: 50px 42px; background: var(--cream); border-top: 3px solid var(--gold); position: relative; }
+  .test-card::before { content: '\201C'; font-family: 'Cormorant Garamond', serif; font-size: 130px; font-weight: 300; color: rgba(201,168,76,0.12); position: absolute; top: 16px; left: 28px; line-height: 1; }
+  .stars { display: flex; gap: 4px; margin-bottom: 26px; }
+  .star-svg { width: 13px; height: 13px; fill: var(--gold); }
+  .test-text { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-style: italic; color: var(--text-mid); line-height: 1.72; margin-bottom: 34px; position: relative; z-index: 1; }
+  .test-author { display: flex; align-items: center; gap: 16px; }
+  .author-init { width: 54px; height: 54px; border-radius: 50%; background: var(--wine); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--gold-light); }
+  .author-name { font-size: 13px; font-weight: 600; color: var(--wine-dark); margin-bottom: 4px; }
+  .author-role { font-size: 9px; font-weight: 400; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+
+  .contact { background: var(--wine); position: relative; overflow: hidden; }
+  .contact::before { content: ''; position: absolute; top: 0; right: 0; width: 48%; height: 100%; background: rgba(0,0,0,0.18); }
+  .contact::after { content: ''; position: absolute; bottom: -80px; left: -80px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 65%); }
+  .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 110px; position: relative; z-index: 1; }
+  .contact-details { margin-top: 50px; display: flex; flex-direction: column; gap: 30px; }
+  .c-item { display: flex; align-items: flex-start; gap: 22px; }
+  .c-icon { width: 50px; height: 50px; flex-shrink: 0; border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; }
+  .c-icon svg { width: 20px; height: 20px; fill: none; stroke: var(--gold); stroke-width: 1.3; }
+  .c-label { font-size: 8px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .c-val { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.75); line-height: 1.7; }
+  .contact-form { padding-top: 24px; }
+  .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .f-group { margin-bottom: 16px; }
+  .f-group label { display: block; font-size: 8px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 9px; }
+  .f-group input, .f-group select, .f-group textarea { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.18); color: var(--white); padding: 15px 18px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300; outline: none; transition: border-color 0.3s; -webkit-appearance: none; }
+  .f-group select option { background: var(--wine-dark); color: var(--white); }
+  .f-group input::placeholder, .f-group textarea::placeholder { color: rgba(255,255,255,0.2); font-size: 12px; }
+  .f-group input:focus, .f-group select:focus, .f-group textarea:focus { border-color: var(--gold); background: rgba(255,255,255,0.06); }
+  .f-group textarea { resize: none; height: 118px; }
+  .f-submit { width: 100%; background: var(--gold); border: none; padding: 19px; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--wine-dark); cursor: pointer; transition: all 0.35s; margin-top: 8px; }
+  .f-submit:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(201,168,76,0.28); }
+
+  footer { background: var(--wine-dark); padding: 90px 90px 44px; border-top: 1px solid rgba(201,168,76,0.12); }
+  .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 70px; margin-bottom: 70px; }
+  .foot-tag { font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.85; margin-bottom: 32px; max-width: 270px; }
+  .foot-socials { display: flex; gap: 10px; }
+  .soc-btn { width: 40px; height: 40px; border: 1px solid rgba(201,168,76,0.22); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.4); text-decoration: none; transition: all 0.3s; }
+  .soc-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .foot-col-title { font-size: 9px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; padding-bottom: 14px; border-bottom: 1px solid rgba(201,168,76,0.14); }
+  .foot-links { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .foot-links a { font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.3s; }
+  .foot-links a:hover { color: var(--gold-light); }
+  .foot-news-desc { font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.45); line-height: 1.75; margin-bottom: 20px; }
+  .foot-news input { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.18); color: var(--white); padding: 13px 16px; font-family: 'Montserrat', sans-serif; font-size: 12px; outline: none; margin-bottom: 10px; }
+  .foot-news input::placeholder { color: rgba(255,255,255,0.2); }
+  .foot-news input:focus { border-color: var(--gold); }
+  .foot-news button { width: 100%; padding: 12px; background: transparent; border: 1px solid var(--gold); color: var(--gold); font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+  .foot-news button:hover { background: var(--gold); color: var(--wine-dark); }
+  .foot-bottom { padding-top: 36px; border-top: 1px solid rgba(201,168,76,0.09); display: flex; justify-content: space-between; align-items: center; }
+  .foot-copy { font-size: 11px; font-weight: 300; color: rgba(255,255,255,0.45); }
+  .foot-copy span { color: var(--gold); opacity: 0.65; }
+  .foot-legal { display: flex; gap: 26px; }
+  .foot-legal a { font-size: 9px; letter-spacing: 1px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.3s; }
+  .foot-legal a:hover { color: var(--gold); }
+
+  .gold-rule { height: 1px; margin: 0 90px; background: linear-gradient(to right, transparent, rgba(201,168,76,0.3), transparent); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  .reveal { opacity: 0; transform: translateY(38px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  .img-break { position: relative; height: 55vh; min-height: 380px; overflow: hidden; }
+  .img-break img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .img-break-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(74,18,25,0.35) 0%, rgba(74,18,25,0.15) 40%, rgba(74,18,25,0.45) 100%); display: flex; align-items: center; justify-content: center; }
+  .img-break-text { text-align: center; color: var(--white); }
+  .img-break-text h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 58px); font-weight: 300; line-height: 1.2; margin-bottom: 14px; }
+  .img-break-text h3 em { color: var(--gold-light); }
+  .img-break-text p { font-size: 12px; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+
+  .pricing-section { background: var(--white); }
+  .pricing-table-wrap { margin-top: 60px; overflow-x: auto; }
+  .pricing-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+  .pricing-table thead th { background: var(--wine); color: var(--gold-light); font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 16px 20px; text-align: left; }
+  .pricing-table tbody td { padding: 18px 20px; font-size: 13px; font-weight: 400; color: var(--text-dark); border-bottom: 1px solid rgba(201,168,76,0.15); }
+  .pricing-table tbody tr:hover { background: var(--cream); }
+  .pricing-table .unit-type { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 500; color: var(--wine-dark); }
+  .pricing-table .price-col { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--wine); }
+  .pricing-table .avail-badge { display: inline-block; padding: 4px 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  .avail-yes { background: rgba(201,168,76,0.12); color: var(--gold-dark); }
+  .avail-no { background: rgba(107,31,42,0.08); color: var(--text-muted); }
+
+  .payment-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+  .plan-card { padding: 40px 32px; background: var(--cream); border-top: 3px solid var(--gold); }
+  .plan-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--wine-dark); margin-bottom: 6px; }
+  .plan-duration { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 20px; }
+  .plan-details { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .plan-details li { font-size: 12px; font-weight: 300; color: var(--text-muted); line-height: 1.6; padding-left: 18px; position: relative; }
+  .plan-details li::before { content: ''; position: absolute; left: 0; top: 7px; width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); }
+  .plan-highlight { font-size: 10px; font-weight: 600; color: var(--wine); background: rgba(201,168,76,0.12); padding: 8px 14px; margin-top: 20px; display: inline-block; letter-spacing: 0.5px; }
+
+  @media (max-width: 860px) {
+    .payment-plans { grid-template-columns: 1fr; }
+  }
+
+  .foot-logo-img { height: 44px; width: auto; margin-bottom: 18px; opacity: 0.9; }
+
+  img[loading="lazy"] { opacity: 0; transition: opacity 0.6s ease; }
+  img[loading="lazy"].loaded { opacity: 1; }
+
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
+  .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--white); margin: 5px 0; transition: all 0.3s ease; }
+  .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+  .nav-toggle.active span:nth-child(2) { opacity: 0; }
+  .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+
+  @media (max-width: 1080px) {
+    section { padding: 90px 40px; }
+    .hero { padding: 0 40px 90px; }
+    nav { padding: 22px 40px; }
+    nav.scrolled { padding: 16px 40px; }
+    .hero-stats { padding: 28px 40px; }
+    .hero-frame { width: 280px; height: 370px; right: 4%; }
+    .about-grid { gap: 60px; margin-top: 60px; }
+    .about-img-main { height: 440px; }
+    .about-badge { left: -20px; width: 100px; height: 100px; }
+    .ab-num { font-size: 32px; }
+    .about-img-over { right: -20px; bottom: -30px; width: 180px; height: 230px; }
+    .prop-grid { gap: 2px; }
+    .gallery { padding: 90px 40px; }
+    .loc-band { padding: 50px 40px; flex-direction: column; text-align: center; }
+    .loc-band-title { font-size: 30px; }
+    .loc-pills { justify-content: center; }
+    .contact-inner { gap: 60px; }
+    footer { padding: 70px 40px 36px; }
+    .foot-grid { gap: 40px; }
+    .gold-rule { margin: 0 40px; }
+    .img-break-text h3 { font-size: clamp(28px, 4.5vw, 48px); }
+  }
+
+  @media (max-width: 860px) {
+    .nav-toggle { display: block; }
+    .nav-links {
+      position: fixed; top: 0; right: -100%; width: 300px; height: 100vh;
+      background: var(--wine-dark); flex-direction: column; justify-content: center;
+      gap: 32px; padding: 40px; transition: right 0.4s ease;
+      box-shadow: -8px 0 40px rgba(0,0,0,0.4);
+    }
+    .nav-links.open { right: 0; }
+    .nav-links a { font-size: 13px; letter-spacing: 3px; color: rgba(255,255,255,0.7); }
+    .nav-cta { text-align: center; display: block !important; }
+
+    .hero { min-height: 680px; padding: 0 30px 120px; }
+    .hero-frame { display: none; }
+    .hero h1 { font-size: clamp(40px, 10vw, 64px); }
+    .hero-sub { max-width: 100%; }
+    .hero-stats { flex-wrap: wrap; padding: 24px 30px; gap: 16px; }
+    .hero-stat { flex: 1 1 40%; padding: 10px 16px; border-right: none; border-bottom: 1px solid rgba(201,168,76,0.12); }
+    .hero-stat:nth-child(odd) { border-right: 1px solid rgba(201,168,76,0.12); }
+
+    section { padding: 80px 30px; }
+    nav { padding: 18px 30px; }
+    nav.scrolled { padding: 14px 30px; }
+
+    .about-grid { grid-template-columns: 1fr; gap: 50px; }
+    .about-img-main { height: 360px; }
+    .about-img-over { width: 150px; height: 190px; right: 16px; bottom: -24px; border-width: 5px; }
+    .about-badge { left: 16px; top: 16px; width: 90px; height: 90px; }
+    .ab-num { font-size: 28px; }
+    .ab-lbl { font-size: 7px; }
+    .about-pillars { grid-template-columns: 1fr; }
+
+    .prop-grid { grid-template-columns: 1fr; gap: 20px; }
+    .prop-card.featured { grid-column: span 1; }
+    .prop-card.featured .prop-img { height: 300px; }
+    .prop-img { height: 280px; }
+    .prop-card:hover { transform: none; }
+
+    .gallery { padding: 80px 30px; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 220px; }
+    .gal-item.tall { grid-row: span 2; }
+    .gal-overlay { opacity: 1; background: linear-gradient(to top, rgba(74,18,25,0.45) 0%, transparent 50%); }
+
+    .amen-grid { grid-template-columns: 1fr 1fr; }
+
+    .process-row { grid-template-columns: 1fr 1fr; gap: 48px 0; }
+    .process-row::before { display: none; }
+
+    .test-grid { grid-template-columns: 1fr; gap: 20px; }
+
+    .contact-inner { grid-template-columns: 1fr; gap: 50px; }
+    .contact::before { width: 100%; }
+
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+    .loc-band { padding: 44px 30px; }
+    .gold-rule { margin: 0 30px; }
+    .img-break { height: 40vh; min-height: 280px; }
+  }
+
+  @media (max-width: 520px) {
+    section { padding: 64px 20px; }
+    nav { padding: 16px 20px; }
+    nav.scrolled { padding: 12px 20px; }
+    .nav-logo img { height: 32px; }
+    nav.scrolled .nav-logo img { height: 28px; }
+
+    .hero { padding: 0 20px 110px; min-height: 600px; }
+    .hero-ctas { flex-direction: column; gap: 12px; }
+    .btn-gold, .btn-ghost { text-align: center; padding: 16px 32px; }
+    .hero-stats { padding: 20px; }
+    .hero-stat { flex: 1 1 100%; border-right: none !important; padding: 10px 0; }
+
+    .about-img-main { height: 280px; }
+    .about-img-over { display: none; }
+    .about-badge { width: 80px; height: 80px; }
+    .ab-num { font-size: 24px; }
+
+    .sec-title { font-size: clamp(32px, 8vw, 48px); }
+    .prop-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+
+    .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
+    .gal-item.tall { grid-row: span 1; }
+
+    .amen-grid { grid-template-columns: 1fr; }
+    .process-row { grid-template-columns: 1fr; }
+
+    .f-row { grid-template-columns: 1fr; }
+    .foot-grid { grid-template-columns: 1fr; gap: 36px; }
+    .foot-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .foot-legal { flex-wrap: wrap; justify-content: center; }
+
+    .loc-band { padding: 36px 20px; }
+    .loc-band-title { font-size: 24px; }
+    .gold-rule { margin: 0 20px; }
+    .img-break { height: 35vh; min-height: 240px; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo"><img src="images/korier-logo.png" alt="Korier Realty" /></a>
+  <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#properties">Properties</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#contact" class="nav-cta">Book a Viewing</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay-2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Established 2015 &nbsp;&middot;&nbsp; Accra, Ghana</div>
+    <h1>Where <em>Luxury</em><br>Meets Home</h1>
+    <p class="hero-sub">Beautifully designed apartments and townhouses in Adenta, Accra — serene spaces, stylishly designed for those who demand the exceptional.</p>
+    <div class="hero-ctas">
+      <a href="#properties" class="btn-gold">Explore Properties</a>
+      <a href="#contact" class="btn-ghost">Book a Viewing</a>
+    </div>
+  </div>
+  <div class="hero-frame">
+    <div class="hero-frame-border"></div>
+    <img src="images/aerial-view.jpg" alt="Aerial view of Korier development" />
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="h-stat-n">10+</div><div class="h-stat-l">Years of Excellence</div></div>
+    <div class="hero-stat"><div class="h-stat-n">30+</div><div class="h-stat-l">Units at Soaring Court</div></div>
+    <div class="hero-stat"><div class="h-stat-n">$60k</div><div class="h-stat-l">Starting Price</div></div>
+    <div class="hero-stat"><div class="h-stat-n">3</div><div class="h-stat-l">Flexible Payment Plans</div></div>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <div class="marquee-item"><span class="m-diamond"></span> Luxury Apartments</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Soaring Court Townhouses</div>
+    <div class="marquee-item"><span class="m-diamond"></span> East Legon, Accra</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Adenta</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Italian Finishes</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Gated Communities</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Premium Living</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Luxury Apartments</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Soaring Court Townhouses</div>
+    <div class="marquee-item"><span class="m-diamond"></span> East Legon, Accra</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Adenta</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Italian Finishes</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Gated Communities</div>
+    <div class="marquee-item"><span class="m-diamond"></span> Premium Living</div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="about-grid reveal">
+    <div class="about-imgs">
+      <img src="images/front-view-2.jpg" class="about-img-main" loading="lazy" alt="Soaring Court apartments" />
+      <img src="images/interior-c8.jpg" class="about-img-over" loading="lazy" alt="Luxury interior finishing" />
+      <div class="about-badge"><div class="ab-num">11</div><div class="ab-lbl">Years of<br>Trust</div></div>
+    </div>
+    <div class="about-body">
+      <div class="eyebrow">Our Story</div>
+      <h2 class="sec-title">A Legacy of<br><em>Refined</em> Living</h2>
+      <p>Established in 2015, Korier Limited is a real estate company dedicated to providing modern residential apartments and townhouses in the best locations. Our flagship development, Soaring Court, deploys modern architectural designs with stylish interiors and marvelously built exteriors in a serene and cozy environment.</p>
+      <p>Situated in a residential enclave at Adenta with easy access to East Legon, Aburi, Madina, and West Legon — Soaring Court is a place for physical, mental, and spiritual tranquility.</p>
+      <div class="about-pillars">
+        <div class="pillar"><div class="pillar-name">Our Mission</div><div class="pillar-desc">To provide an outstanding level of finishing services in the best locations of the land.</div></div>
+        <div class="pillar"><div class="pillar-name">Our Vision</div><div class="pillar-desc">To become the leading Real Estate Company in Africa and beyond, providing best-in-class services to meet the needs of our clients.</div></div>
+        <div class="pillar"><div class="pillar-name">Prime Location</div><div class="pillar-desc">Adjacent to SSNIT Flats in Adenta, with access to markets, hospitals, banks, and schools nearby.</div></div>
+        <div class="pillar"><div class="pillar-name">Modern Comfort</div><div class="pillar-desc">Fully fitted kitchens, air conditioning, recessed ceiling lighting, and tempered glass balustrades in every unit.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<section class="properties" id="properties">
+  <div class="prop-header reveal">
+    <div>
+      <div class="eyebrow">Our Portfolio</div>
+      <h2 class="sec-title">Soaring Court<br><em>Residences</em></h2>
+    </div>
+    <a href="#contact" class="btn-gold">Reserve Your Unit</a>
+  </div>
+  <div class="prop-grid reveal">
+    <div class="prop-card featured">
+      <div class="prop-img-wrap">
+        <img src="images/townhouse.jpg" class="prop-img" loading="lazy" alt="Soaring Court 4 &amp; 6 Bedroom Townhouses" />
+        <div class="prop-tag">Featured Development</div>
+      </div>
+      <div class="prop-body">
+        <div class="prop-loc"><span class="loc-dot"></span> Adenta, Adjacent SSNIT Flats, Accra</div>
+        <div class="prop-name">Luxury<br>Townhouses</div>
+        <div class="prop-feats">
+          <span class="feat">4 &ndash; 6 Bedrooms</span><span class="feat-line"></span>
+          <span class="feat">240 &ndash; 350 m&sup2;</span><span class="feat-line"></span>
+          <span class="feat">Walk-in Closets</span><span class="feat-line"></span>
+          <span class="feat">Private Parking</span>
+        </div>
+        <div class="prop-foot">
+          <div class="prop-price">from $275,000 <small>/ unit</small></div>
+          <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
+        </div>
+      </div>
+    </div>
+    <div class="prop-card">
+      <div class="prop-img-wrap">
+        <img src="images/front-view-34.jpg" class="prop-img" loading="lazy" alt="Soaring Court 1 &amp; 2 Bedroom Apartments" />
+        <div class="prop-tag">Available Now</div>
+      </div>
+      <div class="prop-body">
+        <div class="prop-loc"><span class="loc-dot"></span> Adenta, Accra</div>
+        <div class="prop-name">Apartments<br>1 &amp; 2 Bedroom</div>
+        <div class="prop-feats">
+          <span class="feat">70 &ndash; 160 m&sup2;</span><span class="feat-line"></span>
+          <span class="feat">Fitted Kitchen</span><span class="feat-line"></span>
+          <span class="feat">A/C Units</span>
+        </div>
+        <div class="prop-foot">
+          <div class="prop-price">from $79,000 <small>/ unit</small></div>
+          <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
+        </div>
+      </div>
+    </div>
+    <div class="prop-card">
+      <div class="prop-img-wrap">
+        <img src="images/front-view-3.jpg" class="prop-img" loading="lazy" alt="Soaring Court Studio &amp; Loft Apartments" />
+        <div class="prop-tag">From $60,000</div>
+      </div>
+      <div class="prop-body">
+        <div class="prop-loc"><span class="loc-dot"></span> Adenta, Accra</div>
+        <div class="prop-name">Studios &amp;<br>Loft Apartments</div>
+        <div class="prop-feats">
+          <span class="feat">35 &ndash; 40 m&sup2;</span><span class="feat-line"></span>
+          <span class="feat">Modern Bathrooms</span><span class="feat-line"></span>
+          <span class="feat">Balcony</span>
+        </div>
+        <div class="prop-foot">
+          <div class="prop-price">from $60,000 <small>/ unit</small></div>
+          <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section" id="pricing">
+  <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+    <div class="eyebrow" style="justify-content:center;">Transparent Pricing</div>
+    <h2 class="sec-title">Unit Types &amp;<br><em>Availability</em></h2>
+  </div>
+  <div class="pricing-table-wrap reveal">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Unit Type</th>
+          <th>Size</th>
+          <th>Total Units</th>
+          <th>Available</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="unit-type">Studio</td>
+          <td>35 m&sup2;</td>
+          <td>8</td>
+          <td><span class="avail-badge avail-yes">4 Available</span></td>
+          <td class="price-col">$60,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">Studio</td>
+          <td>40 m&sup2;</td>
+          <td>2</td>
+          <td><span class="avail-badge avail-no">Sold Out</span></td>
+          <td class="price-col">$69,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">1 Bedroom</td>
+          <td>70 m&sup2;</td>
+          <td>3</td>
+          <td><span class="avail-badge avail-yes">1 Available</span></td>
+          <td class="price-col">$79,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">1 Bedroom Deluxe</td>
+          <td>75 m&sup2;</td>
+          <td>5</td>
+          <td><span class="avail-badge avail-yes">2 Available</span></td>
+          <td class="price-col">$87,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">2 Bedroom</td>
+          <td>130 m&sup2;</td>
+          <td>2</td>
+          <td><span class="avail-badge avail-yes">1 Available</span></td>
+          <td class="price-col">$120,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">2 Bedroom Deluxe</td>
+          <td>160 m&sup2;</td>
+          <td>3</td>
+          <td><span class="avail-badge avail-yes">1 Available</span></td>
+          <td class="price-col">$149,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">4 Bedroom Townhouse</td>
+          <td>240 m&sup2;</td>
+          <td>3</td>
+          <td><span class="avail-badge avail-yes">2 Available</span></td>
+          <td class="price-col">$275,000</td>
+        </tr>
+        <tr>
+          <td class="unit-type">6 Bedroom Townhouse</td>
+          <td>350 m&sup2;</td>
+          <td>2</td>
+          <td><span class="avail-badge avail-yes">1 Available</span></td>
+          <td class="price-col">$329,999</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reveal" style="margin-top:80px; text-align:center; max-width:500px; margin-left:auto; margin-right:auto;">
+    <div class="eyebrow" style="justify-content:center;">Flexible Options</div>
+    <h2 class="sec-title">Payment<br><em>Plans</em></h2>
+  </div>
+  <div class="payment-plans reveal">
+    <div class="plan-card">
+      <div class="plan-name">Breather</div>
+      <div class="plan-duration">21 Months</div>
+      <ul class="plan-details">
+        <li>Reservation fee of $3,500</li>
+        <li>Initial payment of 30%</li>
+        <li>Quarterly payments of 10%</li>
+        <li>Spread over 21 months</li>
+      </ul>
+    </div>
+    <div class="plan-card">
+      <div class="plan-name">Snapp</div>
+      <div class="plan-duration">12 Months</div>
+      <ul class="plan-details">
+        <li>Reservation fee of $3,500</li>
+        <li>Initial payment of 50%</li>
+        <li>50% balance spread within 12 months</li>
+      </ul>
+      <div class="plan-highlight">15% Discount</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-name">Mortgage</div>
+      <div class="plan-duration">Bank Financed</div>
+      <ul class="plan-details">
+        <li>Reservation fee of $3,500</li>
+        <li>20% &ndash; 30% down payment</li>
+        <li>Remainder financed by mortgage</li>
+        <li>Work with our partner banks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="img-break reveal">
+  <img src="images/interior-v2.jpg" loading="lazy" alt="Luxury living space" />
+  <div class="img-break-overlay">
+    <div class="img-break-text">
+      <h3>Crafted with <em>Intention</em></h3>
+      <p>Every detail tells a story of quality</p>
+    </div>
+  </div>
+</div>
+
+<section class="gallery" id="gallery">
+  <div class="reveal">
+    <div class="eyebrow">Interior Living</div>
+    <h2 class="sec-title">Spaces <em>Designed</em><br>to Inspire</h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gal-item tall">
+      <img src="images/interior-living.jpg" loading="lazy" alt="Luxury living room with contemporary furnishings" />
+      <div class="gal-overlay"><span class="gal-label">Living Spaces</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-c7.jpg" loading="lazy" alt="Open plan living and dining area" />
+      <div class="gal-overlay"><span class="gal-label">Open Plan Living</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-c8.jpg" loading="lazy" alt="Designer lounge with premium finishes" />
+      <div class="gal-overlay"><span class="gal-label">Designer Lounge</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-bedroom.jpeg" loading="lazy" alt="Master bedroom suite with en-suite bathroom" />
+      <div class="gal-overlay"><span class="gal-label">Master Suite</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-kitchen.jpeg" loading="lazy" alt="Italian-designed fitted kitchen" />
+      <div class="gal-overlay"><span class="gal-label">Italian Kitchen</span></div>
+    </div>
+    <div class="gal-item tall">
+      <img src="images/interior-c1.jpg" loading="lazy" alt="Modern interior design with natural light" />
+      <div class="gal-overlay"><span class="gal-label">Modern Interiors</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-detail.jpeg" loading="lazy" alt="Elegant interior detailing and craftsmanship" />
+      <div class="gal-overlay"><span class="gal-label">Elegant Details</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/front-view-2.jpg" loading="lazy" alt="Soaring Court apartment exterior architecture" />
+      <div class="gal-overlay"><span class="gal-label">Exterior Architecture</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="images/interior-c9.jpg" loading="lazy" alt="Contemporary living space with premium finishes" />
+      <div class="gal-overlay"><span class="gal-label">Premium Finishes</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="amenities" id="amenities">
+  <div class="reveal" style="max-width:580px;">
+    <div class="eyebrow light">Crafted for Living</div>
+    <h2 class="sec-title light">Every Detail<br><em>Considered</em></h2>
+    <p class="sec-sub light">Our residences are equipped with world-class amenities to elevate daily life beyond the ordinary.</p>
+  </div>
+  <div class="amen-grid reveal">
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M2 12h20M2 16c0 2 2 4 4 4h12c2 0 4-2 4-4"/><path d="M6 12V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg></div>
+      <div class="amen-name">Swimming Pool</div>
+      <div class="amen-desc">Resort-style pool within the estate for residents and families.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><path d="M6 9h12M9 9v4l-2 7M15 9v4l2 7"/></svg></div>
+      <div class="amen-name">Gym</div>
+      <div class="amen-desc">On-site fitness centre for an active lifestyle at home.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="1"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <div class="amen-name">24 Hour Security</div>
+      <div class="amen-desc">Self compound development with electric security fencing and round-the-clock guards.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <div class="amen-name">Standby Generator</div>
+      <div class="amen-desc">Backup power supply ensuring uninterrupted electricity at all times.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke-linecap="round"/></svg></div>
+      <div class="amen-name">Fully Fitted Kitchen</div>
+      <div class="amen-desc">Refrigerator, cooker unit &amp; extractor, oven, microwave, and washing machine included.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="var(--gold)" stroke="none"/></svg></div>
+      <div class="amen-name">Internet &amp; DSTV</div>
+      <div class="amen-desc">Internet connectivity and DSTV connection ready in every unit.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></div>
+      <div class="amen-name">Roof Terrace</div>
+      <div class="amen-desc">Communal rooftop terrace with panoramic views of the neighbourhood.</div>
+    </div>
+    <div class="amen-card">
+      <div class="amen-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="amen-name">Spacious Parking</div>
+      <div class="amen-desc">Dedicated car parking spaces within the self compound estate.</div>
+    </div>
+  </div>
+</section>
+
+<div class="loc-band reveal">
+  <div class="loc-band-title"><strong>Location, Location, Location.</strong><br>Adenta &mdash; adjacent to SSNIT Flats, with easy access to Accra's best neighbourhoods.</div>
+  <div class="loc-pills">
+    <div class="loc-pill">East Legon</div>
+    <div class="loc-pill">Adenta</div>
+    <div class="loc-pill">Aburi</div>
+    <div class="loc-pill">Madina</div>
+    <div class="loc-pill">West Legon</div>
+  </div>
+</div>
+
+<section class="process" id="process">
+  <div class="reveal" style="text-align:center; max-width:560px; margin:0 auto;">
+    <div class="eyebrow" style="justify-content:center;">Getting Started</div>
+    <h2 class="sec-title">Your Path to<br><em>Your Dream Home</em></h2>
+  </div>
+  <div class="process-row reveal">
+    <div class="proc-step">
+      <div class="proc-circle"><div class="proc-num">01</div></div>
+      <div class="proc-title">Choose Your Property</div>
+      <div class="proc-desc">Browse our portfolio of luxury apartments and townhouses and find your perfect match.</div>
+    </div>
+    <div class="proc-step">
+      <div class="proc-circle"><div class="proc-num">02</div></div>
+      <div class="proc-title">Book a Viewing</div>
+      <div class="proc-desc">Schedule a private site tour with one of our dedicated property consultants.</div>
+    </div>
+    <div class="proc-step">
+      <div class="proc-circle"><div class="proc-num">03</div></div>
+      <div class="proc-title">Reserve Your Unit</div>
+      <div class="proc-desc">Secure your unit with a $3,500 reservation fee and choose from our Breather, Snapp, or Mortgage payment plans.</div>
+    </div>
+    <div class="proc-step">
+      <div class="proc-circle"><div class="proc-num">04</div></div>
+      <div class="proc-title">Move In &amp; Thrive</div>
+      <div class="proc-desc">Receive the keys to your fully finished, move-in-ready luxury residence.</div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="reveal">
+    <div class="eyebrow">Client Stories</div>
+    <h2 class="sec-title">Lives <em>Transformed</em></h2>
+  </div>
+  <div class="test-grid reveal">
+    <div class="test-card">
+      <div class="stars" role="img" aria-label="5 out of 5 stars">
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="test-text">"The quality of finishing in our Soaring Court townhouse exceeded every expectation. The kitchen alone is worth every penny — we cook every night now."</div>
+      <div class="test-author"><div class="author-init">AK</div><div><div class="author-name">Ama Korantema</div><div class="author-role">Soaring Court Resident</div></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars" role="img" aria-label="5 out of 5 stars">
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="test-text">"As a diaspora investor, I needed a company I could trust from abroad. Korier's team was professional, transparent, and delivered exactly what they promised."</div>
+      <div class="test-author"><div class="author-init">KO</div><div><div class="author-name">Kwame Osei</div><div class="author-role">Investor, London</div></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars" role="img" aria-label="5 out of 5 stars">
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="test-text">"From the cantilevered staircase to the suspended ceilings, every detail is stunning. Korier built us not just a house, but a home we are genuinely proud of."</div>
+      <div class="test-author"><div class="author-init">EA</div><div><div class="author-name">Efua Asante</div><div class="author-role">East Legon Resident</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner reveal">
+    <div>
+      <div class="eyebrow light">Get In Touch</div>
+      <h2 class="sec-title light">Begin Your<br><em>Journey</em> Home</h2>
+      <p class="sec-sub light">Speak with one of our expert consultants. Whether you are a first-time buyer, seasoned investor, or diaspora client — we are here to guide you home.</p>
+      <div class="contact-details">
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="c-label">Visit Us</div><div class="c-val">Adenta, Adjacent SSNIT Flat<br>Accra, Ghana</div></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="c-label">Call Us</div><div class="c-val">Sales: +233 50 131 7334 &nbsp;&middot;&nbsp; +233 50 131 7335<br>Marketing: +233 50 131 7336</div></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="c-label">Email Us</div><div class="c-val">sales@korierrealty.com<br>sales@koriergroup.com</div></div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><div class="c-label">Online</div><div class="c-val">www.korierrealty.com<br>www.koriergroup.com</div></div>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" action="mailto:sales@korierrealty.com" method="POST" enctype="text/plain">
+      <div class="f-row">
+        <div class="f-group"><label for="fname">First Name</label><input id="fname" name="First Name" type="text" placeholder="Your first name" required /></div>
+        <div class="f-group"><label for="lname">Last Name</label><input id="lname" name="Last Name" type="text" placeholder="Your last name" required /></div>
+      </div>
+      <div class="f-group"><label for="email">Email Address</label><input id="email" name="Email" type="email" placeholder="your@email.com" required /></div>
+      <div class="f-group"><label for="phone">Phone Number</label><input id="phone" name="Phone" type="tel" placeholder="+233 xxx xxx xxxx" /></div>
+      <div class="f-group">
+        <label for="interest">Interested In</label>
+        <select id="interest" name="Interested In" required>
+          <option value="">Select a unit type</option>
+          <option>Studio (from $60,000)</option>
+          <option>1 Bedroom Apartment (from $79,000)</option>
+          <option>2 Bedroom Apartment (from $120,000)</option>
+          <option>4 Bedroom Townhouse ($275,000)</option>
+          <option>6 Bedroom Townhouse ($329,999)</option>
+          <option>Loft Apartment</option>
+          <option>Investment Inquiry</option>
+        </select>
+      </div>
+      <div class="f-group"><label for="message">Message</label><textarea id="message" name="Message" placeholder="Tell us about your dream home or investment goals..."></textarea></div>
+      <button type="submit" class="f-submit">Reserve Your Viewing &#8594;</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <img src="images/korier-logo.png" class="foot-logo-img" alt="Korier Realty" />
+      <div class="foot-tag">Modern residential apartments and townhouses in the best locations. Serene spaces, stylishly designed — since 2015.</div>
+      <div class="foot-socials">
+        <a href="#" class="soc-btn" aria-label="Facebook">f</a>
+        <a href="#" class="soc-btn" aria-label="LinkedIn">in</a>
+        <a href="#" class="soc-btn" aria-label="Instagram">ig</a>
+        <a href="#" class="soc-btn" aria-label="Twitter">tw</a>
+      </div>
+    </div>
+    <div>
+      <div class="foot-col-title">Properties</div>
+      <ul class="foot-links">
+        <li><a href="#properties">Townhouses</a></li>
+        <li><a href="#properties">1 &amp; 2 Bed Apartments</a></li>
+        <li><a href="#properties">Studios &amp; Lofts</a></li>
+        <li><a href="#pricing">Pricing &amp; Availability</a></li>
+        <li><a href="#pricing">Payment Plans</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Company</div>
+      <ul class="foot-links">
+        <li><a href="#">About Korier</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press &amp; Media</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-col-title">Stay Informed</div>
+      <p class="foot-news-desc">Receive exclusive updates on new developments, pricing, and investment opportunities.</p>
+      <div class="foot-news">
+        <input type="email" placeholder="Enter your email address" />
+        <button>Subscribe Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="foot-copy">&copy; 2026 <span>Korier Realty</span>. All rights reserved. Korier Limited &mdash; Accra, Ghana.</div>
+    <div class="foot-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Cookie Policy</a></div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('active');
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 100); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+    if (img.complete) { img.classList.add('loaded'); }
+    else { img.addEventListener('load', () => img.classList.add('loaded')); }
+  });
+</script>
+</body>
+</html>
