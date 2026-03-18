@@ -126,26 +126,25 @@
 
   .properties { background: var(--cream); }
   .prop-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 72px; }
-  .prop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
-  .prop-card { background: var(--white); overflow: hidden; position: relative; cursor: pointer; transition: transform 0.45s ease; }
-  .prop-card:hover { transform: translateY(-10px); z-index: 2; }
-  .prop-card.featured { grid-column: span 2; }
+  .prop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .prop-card { background: var(--white); overflow: hidden; position: relative; cursor: pointer; transition: transform 0.45s ease; box-shadow: 0 4px 24px rgba(107,31,42,0.06); }
+  .prop-card:hover { transform: translateY(-8px); z-index: 2; box-shadow: 0 16px 48px rgba(107,31,42,0.12); }
   .prop-img-wrap { overflow: hidden; position: relative; }
-  .prop-img { width: 100%; object-fit: cover; display: block; transition: transform 0.65s ease; height: 360px; }
-  .prop-card.featured .prop-img { height: 450px; }
+  .prop-img { width: 100%; object-fit: cover; display: block; transition: transform 0.65s ease; height: 320px; }
   .prop-card:hover .prop-img { transform: scale(1.05); }
   .prop-tag { position: absolute; top: 24px; left: 24px; background: var(--wine); color: var(--gold-light); font-size: 8px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; padding: 7px 16px; }
   .prop-body { padding: 30px 30px 34px; border-bottom: 3px solid transparent; transition: border-color 0.3s; }
   .prop-card:hover .prop-body { border-color: var(--gold); }
   .prop-loc { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
   .loc-dot { width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); }
-  .prop-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--wine-dark); margin-bottom: 18px; line-height: 1.2; }
-  .prop-feats { display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 22px; }
+  .prop-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--wine-dark); margin-bottom: 12px; line-height: 1.2; }
+  .prop-desc { font-size: 12px; font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
+  .prop-feats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
   .feat { font-size: 10px; font-weight: 500; color: var(--text-muted); letter-spacing: 0.5px; display: flex; align-items: center; gap: 7px; }
   .feat-line { width: 1px; height: 12px; background: var(--gold); opacity: 0.5; }
   .prop-foot { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; border-top: 1px solid rgba(201,168,76,0.2); }
-  .prop-price { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; color: var(--wine); }
-  .prop-price small { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 300; color: var(--text-muted); margin-left: 4px; }
+  .prop-cta { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--wine); text-decoration: none; transition: color 0.3s; }
+  .prop-cta:hover { color: var(--gold-dark); }
   .prop-arrow { width: 46px; height: 46px; background: var(--wine); color: var(--gold); border: none; cursor: pointer; font-size: 18px; font-weight: 300; display: flex; align-items: center; justify-content: center; transition: all 0.3s; font-family: 'Cormorant Garamond', serif; }
   .prop-arrow:hover { background: var(--gold); color: var(--wine-dark); }
 
@@ -354,8 +353,6 @@
     .about-pillars { grid-template-columns: 1fr; }
 
     .prop-grid { grid-template-columns: 1fr; gap: 20px; }
-    .prop-card.featured { grid-column: span 1; }
-    .prop-card.featured .prop-img { height: 300px; }
     .prop-img { height: 280px; }
     .prop-card:hover { transform: none; }
 
@@ -512,60 +509,62 @@
     <a href="#contact" class="btn-gold">Reserve Your Unit</a>
   </div>
   <div class="prop-grid reveal">
-    <div class="prop-card featured">
+    <div class="prop-card">
       <div class="prop-img-wrap">
-        <img src="images/townhouse.jpg" class="prop-img" loading="lazy" alt="Soaring Court 4 &amp; 6 Bedroom Townhouses" />
-        <div class="prop-tag">Featured Development</div>
+        <img src="images/townhouse.jpg" class="prop-img" loading="lazy" alt="Soaring Court Luxury Townhouses" />
+        <div class="prop-tag">Townhouses</div>
       </div>
       <div class="prop-body">
-        <div class="prop-loc"><span class="loc-dot"></span> Adenta, Adjacent SSNIT Flats, Accra</div>
-        <div class="prop-name">Luxury<br>Townhouses</div>
+        <div class="prop-loc"><span class="loc-dot"></span> Adenta, Accra</div>
+        <div class="prop-name">Luxury Townhouses</div>
+        <div class="prop-desc">Spacious two-storey homes with ground and first floor living. Walk-in closets, private parking, and modern architectural design with cantilevered details.</div>
         <div class="prop-feats">
           <span class="feat">4 &ndash; 6 Bedrooms</span><span class="feat-line"></span>
           <span class="feat">240 &ndash; 350 m&sup2;</span><span class="feat-line"></span>
-          <span class="feat">Walk-in Closets</span><span class="feat-line"></span>
-          <span class="feat">Private Parking</span>
+          <span class="feat">En-Suite Bathrooms</span>
         </div>
         <div class="prop-foot">
-          <div class="prop-price">from $275,000 <small>/ unit</small></div>
+          <a href="#pricing" class="prop-cta">View Pricing &darr;</a>
           <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
         </div>
       </div>
     </div>
     <div class="prop-card">
       <div class="prop-img-wrap">
-        <img src="images/front-view-34.jpg" class="prop-img" loading="lazy" alt="Soaring Court 1 &amp; 2 Bedroom Apartments" />
-        <div class="prop-tag">Available Now</div>
+        <img src="images/front-view-34.jpg" class="prop-img" loading="lazy" alt="Soaring Court Apartments" />
+        <div class="prop-tag">Apartments</div>
       </div>
       <div class="prop-body">
         <div class="prop-loc"><span class="loc-dot"></span> Adenta, Accra</div>
-        <div class="prop-name">Apartments<br>1 &amp; 2 Bedroom</div>
+        <div class="prop-name">Apartments</div>
+        <div class="prop-desc">Studio, one-bedroom and two-bedroom units across four floors. Fully fitted kitchens with appliances, air conditioning, recessed ceiling lighting, and spacious modern bathrooms.</div>
         <div class="prop-feats">
-          <span class="feat">70 &ndash; 160 m&sup2;</span><span class="feat-line"></span>
-          <span class="feat">Fitted Kitchen</span><span class="feat-line"></span>
-          <span class="feat">A/C Units</span>
+          <span class="feat">Studio &ndash; 2 Bedrooms</span><span class="feat-line"></span>
+          <span class="feat">35 &ndash; 160 m&sup2;</span><span class="feat-line"></span>
+          <span class="feat">Fitted Kitchen</span>
         </div>
         <div class="prop-foot">
-          <div class="prop-price">from $79,000 <small>/ unit</small></div>
+          <a href="#pricing" class="prop-cta">View Pricing &darr;</a>
           <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
         </div>
       </div>
     </div>
     <div class="prop-card">
       <div class="prop-img-wrap">
-        <img src="images/front-view-3.jpg" class="prop-img" loading="lazy" alt="Soaring Court Studio &amp; Loft Apartments" />
-        <div class="prop-tag">From $60,000</div>
+        <img src="images/front-view-3.jpg" class="prop-img" loading="lazy" alt="Soaring Court Loft Apartments" />
+        <div class="prop-tag">Loft Apartments</div>
       </div>
       <div class="prop-body">
         <div class="prop-loc"><span class="loc-dot"></span> Adenta, Accra</div>
-        <div class="prop-name">Studios &amp;<br>Loft Apartments</div>
+        <div class="prop-name">Loft Apartments</div>
+        <div class="prop-desc">Duplex-style living with a private upper level. Terrace access, open-plan layouts, and tempered glass balustrades — designed for young professionals and investors.</div>
         <div class="prop-feats">
-          <span class="feat">35 &ndash; 40 m&sup2;</span><span class="feat-line"></span>
-          <span class="feat">Modern Bathrooms</span><span class="feat-line"></span>
-          <span class="feat">Balcony</span>
+          <span class="feat">1 &ndash; 2 Bedrooms</span><span class="feat-line"></span>
+          <span class="feat">Terrace</span><span class="feat-line"></span>
+          <span class="feat">Duplex Layout</span>
         </div>
         <div class="prop-foot">
-          <div class="prop-price">from $60,000 <small>/ unit</small></div>
+          <a href="#pricing" class="prop-cta">View Pricing &darr;</a>
           <button class="prop-arrow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">&#8594;</button>
         </div>
       </div>
